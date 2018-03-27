@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-        <link rel="import" href="../../simple-search/simple-search.html">
+        <link rel="import" href="../../simple-searchy/simple-searchy.html">
         <style is="custom-style">
             :root {
-                --search-primary-color: orange;
+                --searchy-primary-color: orange;
                 --paper-input-container-color: orange;
                 --paper-input-container-focus-color: orange;
             }
@@ -18,18 +18,18 @@
         <div>
             <div style="width: 700px;">
                 <p>Static Mode</p>
-                <simple-search static-open></simple-search>
+                <simple-searchy static-open></simple-searchy>
             </div>
             <div style="width: 700px;">
                 <p>Dynamic Mode</p>
-                <simple-search></simple-search>
+                <simple-searchy></simple-searchy>
             </div>
         </div>
         <script>
-            var searchElements = document.querySelectorAll("simple-search");
-            console.log(searchElements);
-            for(var i = 0; i < searchElements.length;i++) {
-                searchElements[i].addEventListener("search", function(e) {
+            var searchyElements = document.querySelectorAll("simple-searchy");
+            console.log(searchyElements);
+            for(var i = 0; i < searchyElements.length;i++) {
+                searchyElements[i].addEventListener("searchy", function(e) {
                     console.log(e.detail);
                 });
             }

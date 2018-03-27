@@ -1,6 +1,6 @@
 {
-    "name": "simple-search",
-    "homepage": "https://github.com/reemardelarosa/simple-search",
+    "name": "simple-searchy",
+    "homepage": "https://github.com/reemardelarosa/simple-searchy",
     "authors": [
       "reemardelarosa <jrddelarosa@gmail.com>"
     ],
@@ -18,9 +18,9 @@
       "iron-component-page": "PolymerElements/iron-component-page#1.1.7"
     },
     "description": "Simple Search Box",
-    "main": "simple-search.html",
+    "main": "simple-searchy.html",
     "keywords": [
-      "search-element", "simple-search", "web-components"
+      "searchy-element", "simple-searchy", "web-components"
     ],
     "license": "MIT",
     "private": false,

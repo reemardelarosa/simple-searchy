@@ -5,34 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <script src="../../web-component-tester/browser.js"></script>
-    <link rel="import" href="../simple-search.html">
+    <link rel="import" href="../simple-searchy.html">
     <title>Simple Test</title>
 </head>
 <body>
-    <test-fixture id="simple-search">
+    <test-fixture id="simple-searchy">
         <template>
-            <simple-search static-open></simple-search>
+            <simple-searchy static-open></simple-searchy>
         </template>
     </test-fixture>
 
     <script>
-        suite('simple search static open', function() {
+        suite('simple searchy static open', function() {
             var element;
             setup(function() {
-                element = fixture('simple-search');
+                element = fixture('simple-searchy');
             });
 
-            test("search area appearing in static open", function() {
+            test("searchy area appearing in static open", function() {
                 assert.equal(element.isOpen, true);
             });
 
-            test("search event triggered", function(done) {
-                element.addEventListener("search", function(event) {
+            test("searchy event triggered", function(done) {
+                element.addEventListener("searchy", function(event) {
                     assert.equal(event.detail, "hello");
                     done();
                 });
-                Polymer.dom(element.root).querySelector("#searchInput").value = "hello";
-                Polymer.dom(element.root).querySelector(".trigger-search paper-icon-button").click();
+                Polymer.dom(element.root).querySelector("#searchyInput").value = "hello";
+                Polymer.dom(element.root).querySelector(".trigger-searchy paper-icon-button").click();
             });
         });
     </script>

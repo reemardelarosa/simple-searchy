@@ -1,30 +1,30 @@
 ### Status
-[![Build Status](https://travis-ci.org/bstavroulakis/simple-search.svg?branch=master)](https://travis-ci.org/reemardelarosa/simple-search)
+[![Build Status](https://travis-ci.org/bstavroulakis/simple-search.svg?branch=master)](https://travis-ci.org/reemardelarosa/simple-searchy)
 
-### General Info `<simple-search>`
+### General Info `<simple-searchy>`
 
-`<simple-search>` shows a search input area on your page.
+`<simple-searchy>` shows a searchy input area on your page.
 
-To use, insert `<simple-search>` in the body:
+To use, insert `<simple-searchy>` in the body:
 ```html
     <body>
-      <simple-search></simple-search>
+      <simple-searchy></simple-searchy>
 ```
 Example:
 
-To show the search 
+To show the searchy 
 ```html
     <body>
-      <simple-search static-open></simple-search>
+      <simple-searchy static-open></simple-searchy>
 ``` 
 
 ### Documentation Page
 
-http://reemardelarosa.github.io/simple-search/components/simple-search/
+http://reemardelarosa.github.io/simple-searchy/components/simple-searchy/
 
 ### Demo Page
 
-http://reemardelarosa.github.io/simple-search/components/simple-search/demo/
+http://reemardelarosa.github.io/simple-searchy/components/simple-searchy/demo/
 
 ### Styling
 The following custom properties and mixins are available for styling:
@@ -32,4 +32,4 @@ Custom property | Description | Default
 
 ----------------------------|--------------------------------------------|----------
 
-`--search-primary-color` | The color of the buttons | `#303F9F`
+`--searchy-primary-color` | The color of the buttons | `#303F9F`

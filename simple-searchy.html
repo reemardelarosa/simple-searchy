@@ -2,35 +2,35 @@
 <link rel="import" href="../iron-icons/iron-icons.html">
 <link rel="import" href="../paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../iron-a11y-keys/iron-a11y-keys.html">
-<link rel="import" href="simple-search-styles.html">
+<link rel="import" href="simple-searchy-styles.html">
 <!-- 
     ### Status
 [![Build Status](https://travis-ci.org/bstavroulakis/simple-search.svg?branch=master)](https://travis-ci.org/reemardelarosa/simple-search)
 
-### General Info `<simple-search>`
+### General Info `<simple-searchy>`
 
-`<simple-search>` shows a search input area on your page.
+`<simple-searchy>` shows a searchy input area on your page.
 
-To use, insert `<simple-search>` in the body:
+To use, insert `<simple-searchy>` in the body:
 ```html
     <body>
-      <simple-search></simple-search>
+      <simple-searchy></simple-searchy>
 ```
 Example:
 
-To show the search 
+To show the searchy 
 ```html
     <body>
-      <simple-search static-open></simple-search>
+      <simple-searchy static-open></simple-searchy>
 ``` 
 
 ### Documentation Page
 
-http://reemardelarosa.github.io/simple-search/components/simple-search/
+http://reemardelarosa.github.io/simple-searchy/components/simple-searchy/
 
 ### Demo Page
 
-http://reemardelarosa.github.io/simple-search/components/simple-search/demo/
+http://reemardelarosa.github.io/simple-searchy/components/simple-searchy/demo/
 
 ### Styling
 The following custom properties and mixins are available for styling:
@@ -38,12 +38,12 @@ Custom property | Description | Default
 
 ----------------------------|--------------------------------------------|----------
 
-`--search-primary-color` | The color of the buttons | `#303F9F`
+`--searchy-primary-color` | The color of the buttons | `#303F9F`
  -->
-<dom-module id="simple-search">
+<dom-module id="simple-searchy">
     <template>
-        <style include="simple-search-styles"></style>
-        <iron-a11y-keys target="{{searchInput}}" keys="enter" on-keys-pressed="searchAction"></iron-a11y-keys>
+        <style include="simple-searchy-styles"></style>
+        <iron-a11y-keys target="{{searchyInput}}" keys="enter" on-keys-pressed="searchyAction"></iron-a11y-keys>
         <div class$="{{_toggleClass}}">
             <div class="flex-horizontal">
                 <div>
@@ -57,10 +57,10 @@ Custom property | Description | Default
                     </template>
                 </div>
                 <div class="input-area flex-child">
-                    <paper-input id="searchInput" mo-label-float placeholder="Search"></paper-input>
+                    <paper-input id="searchyInput" mo-label-float placeholder="Search"></paper-input>
                 </div>
-                <div class="trigger-search">
-                    <paper-icon-button on-tap="searchAction" icon="icons:search"></paper-icon-button>
+                <div class="trigger-searchy">
+                    <paper-icon-button on-tap="searchyAction" icon="icons:search"></paper-icon-button>
                 </div>
             </div>
         </div>
@@ -69,15 +69,15 @@ Custom property | Description | Default
 
 <script>
     Polymer({
-        is: 'simple-search',
+        is: 'simple-searchy',
         properties: {
-            /** If the search area is visible or not */
+            /** If the searchy area is visible or not */
             isOpen: {
                 type: Boolean,
                 value: false,
                 observer: "_isOpenChanged"
             },
-            /** If this is true the search area will always show. Can be set with the static-open attribute*/
+            /** If this is true the searchy area will always show. Can be set with the static-open attribute*/
             staticOpen: {
                 type: Boolean,
                 value: false
@@ -100,24 +100,24 @@ Custom property | Description | Default
             }
         },
         /**
-         * @desc Toggle the search area
+         * @desc Toggle the searchy area
          *
          * @return {Void}
          */
         toggle: function() {
             this.set('isOpen', !this.isOpen);
             if (this.isOpen) {
-                this.$$("#searchInput").value = "";
-                this.$$("#searchInput").focus();
+                this.$$("#searchyInput").value = "";
+                this.$$("#searchyInput").focus();
             }
         },
         /**
-         * @desc Fire the search event
+         * @desc Fire the searchy event
          *
          * @return {Void}
          */
-        searchAction: function() {
-            this.fire("search", this.$$("#searchInput").value);
+        searchyAction: function() {
+            this.fire("searchy", this.$$("#searchyInput").value);
         },
         ready: function() {
             this.isOpen = this.staticOpen;
