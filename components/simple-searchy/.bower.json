@@ -1,0 +1,43 @@
+{
+  "name": "simple-searchy",
+  "homepage": "https://github.com/reemardelarosa/simple-searchy",
+  "authors": [
+    "reemardelarosa <jrddelarosa@gmail.com>"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.6.0",
+    "paper-input": "PolymerElements/paper-input#1.1.15",
+    "iron-a11y-keys": "PolymerElements/iron-a11y-keys#1.0.6",
+    "iron-icons": "PolymerElements/iron-icons#1.1.3",
+    "paper-icon-button": "PolymerElements/paper-icon-button#1.1.2",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#1.3.1"
+  },
+  "devDependencies": {
+    "web-component-tester": "*",
+    "iron-component-page": "PolymerElements/iron-component-page#1.1.7"
+  },
+  "description": "Simple Search Box",
+  "main": "simple-searchy.html",
+  "keywords": [
+    "searchy-element",
+    "simple-searchy",
+    "web-components"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test"
+  ],
+  "_release": "2301b275f2",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "2301b275f2d2765dc06733bdeb614bba381732ea"
+  },
+  "_source": "https://github.com/reemardelarosa/simple-searchy.git",
+  "_target": "master",
+  "_originalSource": "reemardelarosa/simple-searchy",
+  "_direct": true
+}

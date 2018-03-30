@@ -1,0 +1,28 @@
+<dom-module id="simple-searchy-styles">
+    <template>
+        <style>
+            .flex-horizontal {
+                @apply(--layout-horizontal);
+            }
+            .flex-child {
+                @apply(--layout-flex);
+            }
+            .trigger-close,
+            .trigger-searchy,
+            .input-area {
+                display: none;
+            }
+            .opened .trigger-searchy,
+            .opened .input-area,
+            .opened .trigger-close {
+                display: block;
+            }
+            .opened .trigger-open {
+                display: none;
+            }
+            div, .trigger-searchy {
+                color: var(--searchy-primary-color, red);
+            }
+        </style>
+    </template>
+</dom-module>
